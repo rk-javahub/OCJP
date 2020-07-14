@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="target/classes" path="OperatorAndAssignment">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="FlowControl"/>
+	<classpathentry kind="src" path="DeclarationAndAccessModifier"/>
+	<classpathentry kind="src" path="MultithreadingAndConcurrency"/>
+	<classpathentry kind="src" path="LanguageFundamental"/>
+	<classpathentry kind="src" path="OOPs"/>
+	<classpathentry kind="src" path="Lang package"/>
+	<classpathentry kind="src" path="Generics"/>
+	<classpathentry kind="src" path="InnerClasses"/>
+	<classpathentry kind="src" path="GarbageCollection"/>
+	<classpathentry kind="src" path="IO"/>
+	<classpathentry kind="src" path="Internalization"/>
+	<classpathentry kind="src" path="JDBC"/>
+	<classpathentry kind="src" path="Util Package"/>
+	<classpathentry excluding="**" kind="src" output="target/classes" path="CollectionFramework">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="ExceptionHandling"/>
+	<classpathentry kind="src" path="Serialization"/>
+	<classpathentry kind="src" path="Java8"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>
