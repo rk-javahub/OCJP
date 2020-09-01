@@ -18,22 +18,16 @@ class TicketBooking implements Runnable {
 				e.printStackTrace();
 			}
 			System.out.println(ticketAvailable);
-
 		}
-
 	}
-
 }
 
 public class RaceConditionTicketBookingTest {
-
 	public static void main(String[] args) {
 		TicketBooking tb1 = new TicketBooking();
 		Thread t = new Thread(tb1);
 		Thread t1 = new Thread(tb1);
 		t.start();
 		t1.start();
-
 	}
-
 }

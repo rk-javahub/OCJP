@@ -12,22 +12,22 @@ public class ArrayListDemo {
 		al.add(10);
 		al.add("A");
 		al.add(null);
-		System.out.println(al);
+		System.out.println(al); // [A, 10, A, null]
 
 		al.remove(2);
-		System.out.println(al);
+		System.out.println(al);  // [A, 10, null]
 
 		al.add(2, "M");
 		al.add("N");
 		al.set(2, "R");
-		System.out.println(al);
+		System.out.println(al); // [A, 10, R, null, N]
 
 		// ListIterator for iterating through ArrayList
 		ListIterator<Object> itr = (ListIterator<Object>) al.listIterator();
 		while (itr.hasNext()) {
-			System.out.print(" " + itr.next());
+			System.out.print(" " + itr.next()); //  A 10 R null N
 		}
-		System.out.println();
+		System.out.println();  // A 10 R null N 
 
 		// For loop for retrieve element from ArrayList
 		for (Object o : al) {

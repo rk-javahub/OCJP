@@ -62,7 +62,5 @@ public class SingletonDeserialization implements Serializable {
 		SingletonDeserialization deserialization = (SingletonDeserialization) objectInputStream.readObject();
 		System.out.println("SingletonDeserialization object after Deserialization check: " + deserialization);
 		objectInputStream.close();
-
 	}
-
 }

@@ -5,7 +5,7 @@ import java.util.Iterator;
 
 public class ArrayListMethodsDemo {
 
-	public static void main(String[] args)
+	public static void main(String args[])
 	{
 		ArrayList<String> al=new ArrayList<String>();  
 		  al.add("Ravi");  

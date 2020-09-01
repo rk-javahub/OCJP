@@ -19,13 +19,9 @@
 	<classpathentry kind="src" path="Internalization"/>
 	<classpathentry kind="src" path="JDBC"/>
 	<classpathentry kind="src" path="Util Package"/>
-	<classpathentry excluding="**" kind="src" output="target/classes" path="CollectionFramework">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="src" path="ExceptionHandling"/>
 	<classpathentry kind="src" path="Serialization"/>
+	<classpathentry kind="src" path="CollectionFramework"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
