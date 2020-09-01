@@ -5,24 +5,54 @@ import java.util.Iterator;
 
 public class ArrayListMethodsDemo {
 
-	public static void main(String args[])
-	{
-		ArrayList<String> al=new ArrayList<String>();  
-		  al.add("Ravi");  
-		  al.add("Vijay");  
-		  al.add("Ajay");  
-		    
-		  ArrayList<String> al2=new ArrayList<String>();  
-		  al2.add("Sonoo");  
-		  al2.add("Hanumat");
-		  al2.add("Ravi");
-		  //al2.add("Sonoo");
-		    
-		  al.remove(al2);    
-		  
-		  Iterator itr=al.iterator();  
-		  while(itr.hasNext()){  
-		   System.out.println(itr.next());  
-		  }  
+	public static void main(String args[]) {
+		ArrayList<String> al = new ArrayList<String>();
+		al.add("Rohit");
+		al.add("Vijay");
+		al.add("Sachin");
+
+		ArrayList<String> al2 = new ArrayList<String>();
+		al2.add("Sanket");
+		al2.add("Raj");
+		al2.add("Rasika");
+
+		// addAll()
+		al.addAll(al2);
+
+		// clone()
+		@SuppressWarnings("unchecked")
+		ArrayList<String> al3 = (ArrayList<String>) al.clone();
+		System.out.println(al3); // [Rohit, Vijay, Sachin, Sanket, Raj, Rasika]
+
+		// contains()
+		System.out.println(al.contains("Rohit")); // true
+		
+		//containsAll()
+		System.out.println(al.containsAll(al2));  //true
+		
+		//ensureCapacity()
+		al.ensureCapacity(25);
+		
+		//indexOf()
+		System.out.println(al.indexOf("Rasika")); // 5
+		
+		//isEmpty()
+		System.out.println(al.isEmpty());// false
+		
+		// lastIndexOf()
+		System.out.println(al.lastIndexOf("Rohit")); // 0
+		
+		// remove()
+		System.out.println(al.remove("Sanket")); // true
+		
+		// remaining implementation. (1.8 feature)
+		//al.removeIf(filter);
+		
+		
+
+		Iterator<String> itr = al.iterator();
+		while (itr.hasNext()) {
+			System.out.println(itr.next());
+		}
 	}
 }
