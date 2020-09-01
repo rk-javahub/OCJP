@@ -38,7 +38,7 @@ public class ArrayListDemo {
 		// Check whether particular element exists in ArrayList
 
 		if (al.contains("A")) {
-			System.out.println("Letter A available");
+			System.out.println("Letter A available");  // Output
 		} else {
 			System.out.println("Letter A not available");
 		}
