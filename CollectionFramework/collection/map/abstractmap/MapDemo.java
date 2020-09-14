@@ -1,4 +1,4 @@
-package collection.map;
+package collection.map.abstractmap;
 
 import java.util.Collection;
 import java.util.HashMap;
