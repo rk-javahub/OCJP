@@ -1,4 +1,4 @@
-package com.collection.cursor;
+package collection.cursor;
 import java.util.Enumeration;
 import java.util.Vector;
 
