@@ -1,4 +1,4 @@
-package com.collection.map;
+package collection.map.sortedmap;
 
 import java.util.Comparator;
 import java.util.TreeMap;
