@@ -26,33 +26,37 @@ public class ArrayListMethodsDemo {
 
 		// contains()
 		System.out.println(al.contains("Rohit")); // true
-		
-		//containsAll()
-		System.out.println(al.containsAll(al2));  //true
-		
-		//ensureCapacity()
+
+		// containsAll()
+		System.out.println(al.containsAll(al2)); // true
+
+		// ensureCapacity()
 		al.ensureCapacity(25);
-		
-		//indexOf()
+
+		// indexOf()
 		System.out.println(al.indexOf("Rasika")); // 5
-		
-		//isEmpty()
+
+		// isEmpty()
 		System.out.println(al.isEmpty());// false
-		
+
 		// lastIndexOf()
 		System.out.println(al.lastIndexOf("Rohit")); // 0
-		
+
 		// remove()
 		System.out.println(al.remove("Sanket")); // true
-		
+
 		// remaining implementation. (1.8 feature)
-		//al.removeIf(filter);
-		
-		
+		// al.removeIf(filter);
 
 		Iterator<String> itr = al.iterator();
 		while (itr.hasNext()) {
 			System.out.println(itr.next());
+
+			/*
+			 * Since Iterator returned by ArrayList is fail fast exception is thrown if we
+			 * try to modify ArrayList during iterating
+			 */
+			// al.add("Sachin"); O/P - java.util.ConcurrentModificationException
 		}
 	}
 }
