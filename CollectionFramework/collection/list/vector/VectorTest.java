@@ -1,4 +1,4 @@
-package com.collection.list;
+package collection.list.vector;
 
 import java.util.Vector;
 public class VectorTest {

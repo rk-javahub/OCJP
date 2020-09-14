@@ -1,4 +1,4 @@
-package com.collection.list;
+package com.collection.cursor;
 
 import java.util.ArrayList;
 import java.util.ListIterator;

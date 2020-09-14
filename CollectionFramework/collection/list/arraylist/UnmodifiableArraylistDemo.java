@@ -1,5 +1,5 @@
 /*Java program to built unmodifiable ArrayList*/
-package com.collection.list;
+package collection.list.arraylist;
 
 import java.util.ArrayList;
 import java.util.Collections;

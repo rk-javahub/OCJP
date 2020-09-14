@@ -1,5 +1,5 @@
 /*Program to remove duplicate elements from ArrayList*/
-package com.collection.list;
+package collection.list.arraylist;
 
 import java.util.ArrayList;
 import java.util.HashSet;
