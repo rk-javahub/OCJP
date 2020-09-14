@@ -1,7 +1,11 @@
 package collection.list.arraylist;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Enumeration;
 import java.util.Iterator;
+import java.util.List;
+import java.util.ListIterator;
 
 public class ArrayListMethodsDemo {
 
@@ -10,6 +14,7 @@ public class ArrayListMethodsDemo {
 		al.add("Rohit");
 		al.add("Vijay");
 		al.add("Sachin");
+		al.add(null);// null insertion possible in ArrayList
 
 		ArrayList<String> al2 = new ArrayList<String>();
 		al2.add("Sanket");
@@ -48,9 +53,10 @@ public class ArrayListMethodsDemo {
 		// remaining implementation. (1.8 feature)
 		// al.removeIf(filter);
 
+		System.out.println("Iterating using Iterator");
 		Iterator<String> itr = al.iterator();
 		while (itr.hasNext()) {
-			System.out.println(itr.next());
+			System.out.print(itr.next() + " ");
 
 			/*
 			 * Since Iterator returned by ArrayList is fail fast exception is thrown if we
@@ -58,5 +64,44 @@ public class ArrayListMethodsDemo {
 			 */
 			// al.add("Sachin"); O/P - java.util.ConcurrentModificationException
 		}
+
+		System.out.println("\n\nIterating using ListIterator");
+		ListIterator<String> listIterator = al.listIterator();
+		while (listIterator.hasNext()) {
+			System.out.print(listIterator.next() + " ");
+			// System.out.println(listIterator.previous());
+			/*
+			 * ListIterator returned by ArrayList is also fail fast like Iterator.
+			 */
+			// al.add("Sachin"); O/P - java.util.ConcurrentModificationException
+		}
+
+		System.out.println("\n\nIterating using Enumeration");
+		Enumeration<String> enumeration = Collections.enumeration(al);
+		while (enumeration.hasMoreElements()) {
+			System.out.print(enumeration.nextElement() + " ");
+
+			/*
+			 * Enumeration returned by ArrayList is also fail fast like Iterator.
+			 */
+			// al.add("Sachin"); O/P - java.util.ConcurrentModificationException
+		}
+
+		System.out.println("\n\nIterating using enhanced foreach loop");
+		for (String name : al) {
+			System.out.print(name + " ");
+
+			/*
+			 * Enhanced foreach is also fail fast like Iterator.
+			 */
+			// al.add("Sachin"); O/P - java.util.ConcurrentModificationException
+		}
+
+		/*
+		 * Making ArrayList sysnchronized so no 2 thread access ArrayList object at the
+		 * same time
+		 */
+		@SuppressWarnings("unused")
+		List<String> synchronizedAL = Collections.synchronizedList(al);
 	}
 }
