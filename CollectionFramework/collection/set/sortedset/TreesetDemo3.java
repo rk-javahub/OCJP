@@ -1,4 +1,4 @@
-package com.collection.set;
+package collection.set.sortedset;
 
 import java.util.TreeSet;
 

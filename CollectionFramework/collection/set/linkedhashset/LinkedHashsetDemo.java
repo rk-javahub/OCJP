@@ -1,4 +1,4 @@
-package com.collection.set;
+package collection.set.linkedhashset;
 
 import java.util.Iterator;
 import java.util.LinkedHashSet;

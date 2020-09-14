@@ -1,6 +1,6 @@
 //Descending sorting order (Customized) on integer
 
-package com.collection.set;
+package collection.set.sortedset;
 
 import java.util.Comparator;
 import java.util.TreeSet;
