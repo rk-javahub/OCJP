@@ -1,5 +1,5 @@
 /*Java program to built unmodifiable ArrayList*/
-package collection.list.arraylist;
+package util.collections;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -13,7 +13,5 @@ public class UnmodifiableArraylistDemo {
 		al = (ArrayList<Integer>) Collections.unmodifiableList(al);
 		al.add(9);
 		System.out.println(al);
-
 	}
-
 }
