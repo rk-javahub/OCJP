@@ -49,11 +49,15 @@ public class ArrayListMethodsDemo {
 
 		// remove()
 		System.out.println(al.remove("Sanket")); // true
+		
+		// retainAll()
+		al.retainAll(al2);
+		System.out.println("\n\nal.retainAll(al1)  " + al); // [Raj, Rasika]
 
 		// remaining implementation. (1.8 feature)
 		// al.removeIf(filter);
 
-		System.out.println("Iterating using Iterator");
+		System.out.println("\n\nIterating using Iterator");
 		Iterator<String> itr = al.iterator();
 		while (itr.hasNext()) {
 			System.out.print(itr.next() + " ");
