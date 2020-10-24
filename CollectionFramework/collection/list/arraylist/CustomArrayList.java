@@ -20,7 +20,7 @@ class ArrayListCustom<E> {
 	private int currentsize = 0;
 	private Object arrayData[] = null;
 
-	// Constructor to initilalize Array.
+	// Constructor to initialize Array.
 	ArrayListCustom() {
 		arrayData = new Object[initial_capacity];
 	}
@@ -65,7 +65,7 @@ class ArrayListCustom<E> {
 
 	}
 
-	// Methode to increase ArrayList size after reaching threshold.
+	// Method to increase ArrayList size after reaching threshold.
 	private void ensureCapacity() {
 		int newCapacity = arrayData.length * 2;
 		arrayData = Arrays.copyOf(arrayData, newCapacity);
